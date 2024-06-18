@@ -15,7 +15,7 @@ sudo systemctl stop anydesk
 sudo systemctl stop anydesk.service
 
 # Baixar o arquivo de configuração
-wget $CONFIG_URL -O /tmp/AnyDesk
+wget $CONFIG_URL -O /tmp/anydesk
 
 # Mover o arquivo de configuração para o diretório correto
 sudo mv /tmp/anydesk /etc/anydesk/
