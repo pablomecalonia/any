@@ -1,7 +1,7 @@
 #!/bin/bash
 # Variaveis
-DEB_URL="https://raw.githubusercontent.com/SEU_USUARIO/anydesk-raspberry-install/main/anydesk_6.3.0-1_armhf.deb"
-CONFIG_URL="https://raw.githubusercontent.com/SEU_USUARIO/anydesk-raspberry-install/main/AnyDesk"
+DEB_URL="https://raw.githubusercontent.com/pablomecalonia/any/anydesk_6.3.0-1_armhf.deb"
+CONFIG_URL="https://raw.githubusercontent.com/pablomecalonia/any/anydesk"
 # Baixar o arquivo .deb
 wget $DEB_URL -O /tmp/anydesk_6.3.0-1_armhf.deb
 # Instalar o AnyDesk
