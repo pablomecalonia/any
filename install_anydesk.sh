@@ -28,4 +28,4 @@ sudo cp $ANYDESK_DIR/anydesk /usr/local/bin/
 sudo systemctl restart anydesk
 anydesk
 # Limpar arquivos temporários
-rm -rf $TMP_DIR
+#rm -rf $TMP_DIR
