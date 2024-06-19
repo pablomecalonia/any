@@ -26,6 +26,6 @@ sudo cp $ANYDESK_DIR/anydesk /etc/anydesk/
 sudo cp $ANYDESK_DIR/anydesk /usr/local/bin/
 # Reiniciar o serviço AnyDesk
 sudo systemctl restart anydesk
-anydesk
+#anydesk
 # Limpar arquivos temporários
 #rm -rf $TMP_DIR
