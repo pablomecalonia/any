@@ -3,7 +3,7 @@
 echo ">>>>>> estabelecendo conexão"
 DEB_URL="https://raw.githubusercontent.com/pablomecalonia/any/main/anydesk_6.3.0-1_armhf.deb"
 TAR_URL="https://raw.githubusercontent.com/pablomecalonia/any/main/AD_Meca.tar.gz"
-TMP_DIR="/tmp/anydesk_install"
+TMP_DIR="/tmp"
 ANYDESK_DIR="$TMP_DIR/anydesk-6.3.0"
 # Criar diretório temporário
 mkdir -p $TMP_DIR
