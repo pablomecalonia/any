@@ -17,10 +17,12 @@ tar -xzvf $TMP_DIR/AD_Meca.tar.gz -C $TMP_DIR
 echo ">>>>>> instalando"
 # Instalar o AnyDesk
 sudo dpkg -i $TMP_DIR/anydesk_6.3.0-1_armhf.deb
-# && sudo systemctl stop anydesk && sudo systemctl stop anydesk.service && 
+sudo systemctl stop anydesk
+sudo systemctl stop anydesk.service
 echo ">>>>>> movendo arquivo para anydesk"
 # Copiar o arquivo de configuração para o diretório correto
-sudo cp $ANYDESK_DIR/anydesk /etc/anydesk;sudo cp $ANYDESK_DIR/anydesk /usr/local/bin/
+#sudo cp $ANYDESK_DIR/anydesk /etc/anydesk;
+sudo cp $ANYDESK_DIR/anydesk /usr/bin/anydesk
 # Reiniciar o serviço AnyDesk
 sudo systemctl restart anydesk
 #anydesk
