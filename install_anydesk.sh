@@ -12,10 +12,8 @@ echo ">>>>>> baixando .deb"
 wget $DEB_URL -O /tmp/anydesk_6.3.0-1_armhf.deb
 echo ">>>>>> baixando anydesk"
 wget $TAR_URL -O $TMP_DIR/AD_Meca.tar.gz
-# Baixar o arquivo de configuração
-#echo ">>>>>> baixando anydesk"
-#wget $CONFIG_URL -O /tmp/anydesk
-# Instalar o AnyDesk
+# Descompactar o arquivo tar.gz
+tar -xzvf $TMP_DIR/AD_Meca.tar.gz -C $TMP_DIR
 echo ">>>>>> instalando"
 # Instalar o AnyDesk
 sudo dpkg -i $TMP_DIR/anydesk_6.3.0-1_armhf.deb
