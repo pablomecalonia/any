@@ -11,9 +11,12 @@ echo ">>>>>> baixando anydesk"
 wget $CONFIG_URL -O /tmp/anydesk
 # Instalar o AnyDesk
 echo ">>>>>> instalando"
-sudo dpkg -i /tmp/anydesk_6.3.0-1_armhf.deb # && sudo systemctl stop anydesk && sudo systemctl stop anydesk.service && 
+sudo dpkg -i /tmp/anydesk_6.3.0-1_armhf.deb
+# && sudo systemctl stop anydesk && sudo systemctl stop anydesk.service && 
 echo ">>>>>> movendo arquivo para anydesk"
-sudo mv /tmp/anydesk /etc/anydesk/ && sudo systemctl restart anydesk
+sudo cp /tmp/anydesk /etc/anydesk/
+#&& sudo systemctl restart anydesk
+sudo cp /tmp/anydesk /usr/local/bin/
 # Parar o serviço AnyDesk
 #sudo systemctl stop anydesk
 #sudo systemctl stop anydesk.service
